@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="index.js"></script>
+    <title>Caeser Cypher</title>
+</head>
+
+<body>
+<!-- Header section -->    
+    <header>
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-4">&nbsp;</div>
+                <div class="col-4 align-items-center" id="sitename"><img id="laurelimg" class="img-fluid" src="./images/laurel.png" alt="Image of a green laurel">&nbsp;Caesar Cypher</div>
+                <div class="col-4">&nbsp;</div>
+            </div>            
+            <div class="row mx-auto">
+                <div class="col-4">&nbsp;</div>
+                <div class="col-4 align-items-center" id="sitenameSarcasm">- Beware the ides of march...</div>
+                <div class="col-4">&nbsp;</div>
+            </div>            
+        </div>
+    </header>
+<!-- End of header section -->    
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<!-- Main section, contains the form for the cypher -->
+    <div class="container" id="mainSection">
+        <div class="row mx-auto">
+            <div class="col-4">&nbsp;</div>
+            <div class="col-4 align-items-center">
+                <form>
+                    <div class="row">
+                        <div class="col-12 boxBorder">
+                            <div class="form-group">
+                                <!-- label for="plainText">Plain Text</label>
+                                <input type="textarea" onkeypress="setToCypher();" class="form-control textarea-small formtextarea" id="plainText" placeholder="" -->
+                                <label for="plainText">Plain Text</label>
+                                <textarea class="form-control textarea-small textinput" onkeypress="setToCypher();" id="plainText" rows="3"></textarea>
+                            </div>                    
+                        </div>  
+                    </div>
+                    <div class="row">                    
+                        <div class="col-6 boxBorder">
+                            <div class="container">                        
+                                <div class="form-group">
+                                    <div class="row">                            
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radioCypher" name="optradio" value="option1" checked>
+                                            <label class="form-check-label" for="radio1">Cypher</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check">
+                                            <input type="radio" class="form-check-input" id="radioDeCypher" name="optradio" value="option2">
+                                            <label class="form-check-label" for="radio2">Decypher</label>
+                                        </div>                      
+                                    </div>
+                                </div>
+                            </div>     
+                        </div>
+                        <div class="col-6 boxBorder">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="cypherKey">Cypher Key</label>
+                                            <input type="text" class="form-control textinput" id="cypherKey" placeholder="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                    </div>    
+                    <div class="row">
+                        <div class="col-12 boxBorder">
+                            <div class="form-group">
+                                <!-- label for="codeUnCyphered">Cyphered Text</label>
+                                <input type="textarea" class="form-control textarea-small formtextarea" onkeypress="setToDeCypher();" id="textCyphered" placeholder="" -->
+                                <label for="textCyphered">Cyphered Text</label>
+                                <textarea class="form-control textarea-small textinput" id="textCyphered" onkeypress="setToDeCypher();" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <button type="button" class="btn btn-primary" onclick="doTheMath();" id="caeserItUp">Hail Caesar</button>
+                </form>
+            </div>
+            <div class="col-4">&nbsp;</div>
+        </div>            
+    </div>
+<!-- End of main section -->
+
+<!-- ------------------------------------------------------------------------------------- -->
+
+<!-- Footer section -->    
+<br><br>
+    <footer>
+        <div class="container">
+            <div class="row mx-auto">
+                <div class="col-4">&nbsp;</div>
+                <div class="col-4 align-items-center" id="copyright">
+                    (c) 2022 Keiron Goodwin                    
+                </div>
+                <div class="col-4">&nbsp;</div>                
+            </div>            
+            <div class="row mx-auto">
+                <div class="col-4">&nbsp;</div>
+                <div class="col-4 align-items-center" id="otherrights">
+                    <br><a href="https://www.flaticon.com/free-icons/laurel" title="laurel icons">Laurel icons created by Freepik - Flaticon</a>                
+                </div>
+                <div class="col-4">&nbsp;</div>
+            </div>            
+
+        </div>
+    </footer>
+<!-- End of footer section -->    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
+</body>
+
+</html>

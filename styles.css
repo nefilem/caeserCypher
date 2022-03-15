@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.boxBorder {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.formtextarea {
+    vertical-align: top;
+    text-align: left;
+}
+
+#laurelimg {
+    height: 64px;
+    width: 64px;
+}
+
+#sitename {    
+    font-size: 3rem;
+}
+
+#sitenameSarcasm {    
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#copyright {
+    font-size: 1.25rem;
+}
+
+#textCyphered {
+    height: 200px;
+    width: 100%;
+}
+
+#plainText {
+    height: 200px;
+    width: 100%;
+}
